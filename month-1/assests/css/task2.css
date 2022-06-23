@@ -1,0 +1,28 @@
+h3 {
+    text-align: center;
+    background-color: aqua;
+}
+
+p{
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+    font-size: larger;
+    background-color:  rgb(222, 184, 135);
+
+}
+
+div {
+    background-color: #006666;
+    width: 200px;
+    height: 250px;
+    background-image: url(../images/rose.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+}
