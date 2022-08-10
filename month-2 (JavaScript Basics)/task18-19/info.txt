@@ -1,0 +1,84 @@
+
+
+JAVASCRIPT 3 ( Operators, logical operators, switch) - PRESENTATION TASKS
+
+Exercise (1)
+
+→ Create a web page that asks the user to enter two numbers and displays
+their sum and their product
+
+
+Exercise (2)
+
+→ What will be the output of the code below?
+let a = 1, b = 1;
+let c = ++a;
+let d = c++;
+alert(a); // 1
+alert(c); // 2
+alert(d++); 3 
+
+Exercise (3)
+
+→ What will be the output of the following script:
+alert(5 > 4); // ?
+alert("apple" > "pineapple"); // ?
+alert("2" > "12"); // ?
+alert(undefined == null); // ?
+alert(undefined === null); // ?
+alert(null == " 0 "); // ?
+alert(null === +"0"); // ?
+→ Write down and then check your answer in the browser
+
+Exercise (4)
+→ Write the code which asks for a login with prompt
+→ If the visitor enters “Admin“, then prompt for a password
+→ If the input is an empty line or Esc – show “Canceled.”
+→ If it’s another string – then show “I don’t know you”
+→ The password is checked as follows:
+→ If it equals “TheMaster”, then show “Welcome!”
+→ Another string – show “Wrong password”
+→ For an empty string or cancelled input, show “Canceled”
+→ Hint: passing an empty input to a prompt returns an empty string ", while pressing
+ESC during a prompt returns null
+
+Exercise (5)
+
+→ What the code below is going to output?
+alert(null || 2 || undefined); // ?
+alert(1 && null && 2); // ?
+alert(null || 2 && 3 || 4); // ?
+alert(!1 && !2 || 3); // ?
+
+Exercise (6)
+
+→ Create a web page that asks the user to enter a year, and prints whether this year is
+a leap year
+→ Every year that is exactly divisible by four is a leap year, except for years that are
+exactly divisible by 100, but these centurial years are leap years if they are exactly
+divisible by 400
+→ For example, the years 1700, 1800, and 1900 were not leap years, but the years 1600
+and 2000 were
+
+Exercise (7)
+
+→ Write the code using if..else which would correspond to the following switch:
+switch (browser) {
+case 'Edge':
+alert("You've got the Edge!");
+break;
+case 'Chrome':
+case 'Firefox':
+case 'Safari':
+case 'Opera':
+alert('Okay we support these browsers too');
+break;
+default:
+alert('We hope that this page looks ok!');
+}
+
+Exercise (8)
+
+→ Write a simple calculator app
+→ Ask the user for two numbers and an operation (+, -, *, /)
+→ Display the result of applying the operation on the input numbers
