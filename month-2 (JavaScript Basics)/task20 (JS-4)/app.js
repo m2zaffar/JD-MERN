@@ -16,6 +16,7 @@
 // ***
 // **
 // *
+ //task 1
 
 let myNumber = 45;
 
@@ -62,12 +63,84 @@ document.write('**** <br>')
 document.write('*** <br>')
 document.write('** <br>')
 document.write('* <br>')
-
-
-// for(let i=4; i>=0; i--){
-//     document.write('*'*4)
-// }  Why not ?? crazy JS :(
+document.write('---------------------------------------------------<br>')
 
 
 
 
+/* _________OPTINAL_________PRESENTATION_________TASKS____________
+
+
+Exercise (1)
+
+→ Ask the user to enter a number
+→ If the user provides a non-numeric value (such as “abc”), display an error message
+and ask the user to try again
+→ Hint: use the function isNaN() to check if the conversion to number failed
+
+Exercise (2)
+
+→ Get a number from the user and print the sum of its digits
+→ For example, if the user enters the number 57103, then your script should print 16
+(5+7+1+0+3)
+
+Exercise (3)
+
+→ Get from the user two numbers: min and max
+→ Output all the even numbers between min and max (note that min and max
+→ themselves might be odd numbers)
+→ For example, if the user enters min = 5 and max = 14, you should print the numbers
+6,8,10,12,14
+
+
+Exercise (4)
+→ Get from the user a number
+→ Print to the console a square of stars whose length is the number specified by the user
+
+ SOLUTIONS BELOW */
+
+
+
+// Exercise (1)
+
+do{
+    var number = prompt('ENTER THE NUMBER:')
+}while(isNaN(number)){}
+
+
+
+// Exercise (2)
+
+let number = Number(prompt('Enter the number:'))
+let saygac = 0
+while(number>0){
+    saygac=saygac+number%10
+    number=number/10
+    number=parseInt(number)
+
+}
+alert('sum of the digits = '+saygac)
+
+
+// Exercise (3)
+
+let minNumber = Number(prompt('Enter min number:'))
+let maxdNumber = Number(prompt('Enter max number:'))
+
+for(let i = minNumber; i<=maxdNumber; i++){
+    if (i%2==0){
+        console.log(i)
+    }
+}
+
+// Exercise (4)
+
+let star = Number(prompt('enter the number of square stars:'))
+document.write('<br>This is the solution of exercise 4 from optinal tasks at presentation<br><br>')
+for(let j=0;j<=star;j++){
+    for(let i = 0; i<=star;i++){
+        document.write('*')
+    }
+    document.write('<br>')
+
+}

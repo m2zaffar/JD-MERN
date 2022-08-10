@@ -1,0 +1,53 @@
+// Task1. Ureyimde bir reqem tutmusam 0-dan 50ye qeder. User her defesinde hemin ededi sorusun. Eger sehvdirse, yeniden sorussun. Duz olanda, kapital bank hesabinda 1000 manat kocurulsun console-a cixarin. 
+// *ADVANCED*: nece defeye tapdi, onu da cixarin. Tutaq ki,  ehsen, 10 defeye tapdin. 
+// *ADVANCED ADVANCED* : 
+//  eger addimin sayi 1 olanda olsun 1000 manat
+//  eger addimlarin sayi 2,3,4,5 olarsa  olsun 750 manat
+//  eger addimlarin sayi 6,7,8,9 olarsa  olsun 250 manat
+//  eger addimlarin sayi 10+ olarsa  olsun -250 manat  (ozu bize pul versin)
+// -------------------------------------------------------------------------------------------------------------------
+
+// TASK2. 1-den verilen edede qeder olan ededlerin cemi. 
+
+// -------------------------------------------------------------------------------------------------------------------
+// TASK3. ekranda bu formada sekil cekin
+
+*
+****
+***
+**
+*
+
+
+optinal presentation tasks
+
+Exercise (1)
+
+→ Ask the user to enter a number
+→ If the user provides a non-numeric value (such as “abc”), display an error message
+and ask the user to try again
+→ Hint: use the function isNaN() to check if the conversion to number failed
+
+Exercise (2)
+
+→ Get a number from the user and print the sum of its digits
+→ For example, if the user enters the number 57103, then your script should print 16
+(5+7+1+0+3)
+
+Exercise (3)
+
+→ Get from the user two numbers: min and max
+→ Output all the even numbers between min and max (note that min and max
+→ themselves might be odd numbers)
+→ For example, if the user enters min = 5 and max = 14, you should print the numbers
+6,8,10,12,14
+
+
+Exercise (4)
+→ Get from the user a number
+→ Print to the console a square of stars whose length is the number specified by the user
+→ For example, if the user entered the number 3, your should print:
+***
+***
+***
+→ Hint: Use the character ‘\n’ to start a new line
