@@ -1,0 +1,75 @@
+Functions, scope, debug lesson. You can find given and presentation tasks
+
+---------------TASK21----------------------
+
+TASK21.1 user prompt-la 2 eded daxil edecek. Siz, onlarin quvvetini tapacaqsiniz: tutaq ki, 2,5  ---> 2*2*2*2*2=32 
+ekrana cixmalidir. Diqqet edin ki, sizin ayrica funksiyalariniz olsun. 
+Hem deyiseni prompt-la alib number-e ceviren funksiyaniz, hem hesablayan funksiyaniz ve hem de ekrana 
+cixaran funksiyaniz. Bir sozle calisin funksiyalarla isleyin.
+
+
+
+
+Bir add funksiyasi yazin. 3 arqument alsin. ilk 2si ededler (eded1 ve eded2) 3cusu ise, funksiya olsun.
+(callback). men o funksiyaya console.log ve ya alert verib, ozum teyin edim, neticeni alert-de gostersin, 
+yoxsa console-da.
+add(3,5,console.log) //  console-a 8 yazmalidi
+add(3,5,alert) //  alert-e 8 yazmalidi
+
+
+---------------TASK22---------------------
+
+function checkAge(age, granted, denied) {
+    if (age < 18)     denied();
+         else     granted();
+}
+
+let age = prompt('What is your age?', 18);
+
+function grantAccess() {
+    alert('Access granted');
+}
+function denyAccess() {
+    alert('Access denied');
+}
+checkAge(age, grantAccess, denyAccess);
+
+
+bu callback-lari arrow funksiya ile evez edin
+
+
+-----------------JAVASCRIPT 5-6(Functions, scope, debug) OPTINAL PRESENTATION TASKS--------------------
+
+Exercise (1)
+
+→ Write a function pow(x,n) that returns x in power n, or in other words, multiplies x by
+itself n times and returns the result
+→ e.g., pow(3, 4) = 3 * 3 * 3 * 3 = 81
+→ The function should support only natural values of n (i.e., integer from 1 up)
+→ Create a web page that prompts for x and n, and then shows the result of pow(x,n)
+
+
+Exercise (2)
+
+→ Write a function isPrime(n) that gets a natural value of n and returns a boolean
+indicating is n is a prime number or not
+→ A prime number is a natural number that divides only by 1 and itself
+→ e.g., 7, 11 and 13 are prime numbers while 8, 12 and 15 are not primes
+→ Write another function showPrimes(n) that outputs all the prime numbers up to n
+→ This function should use isPrime(n) to test for primality
+→ Create a web page that prompts for n, and then shows all the prime numbers up to n
+
+Exercise (3)
+
+same with given task - 'task22'
+
+
+
+
+
+
+
+
+
+
+
