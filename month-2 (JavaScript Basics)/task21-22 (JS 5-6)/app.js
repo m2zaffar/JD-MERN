@@ -17,39 +17,14 @@
 
 //---------------------------TASK 21.2-------------------------------------------
 
-// solution-1
-// function add(a,b,fucnCallBack){
-//     if (fucnCallBack=='console.log'){
-//         console.log(a+b)
-//     }else if(fucnCallBack=='alert'){
-//         alert(a+b)
-//     }
-// }
-
-// add(3,5,'console.log') 
-// add(3,5,'alert') 
 
 
-
-// solution-2
 // function add(a,b,callback){
-//     if (callback==alrt){
-//         alert(a+b)
-//     } else if (callback==consoleLog){
-//         console.log(a+b)
-//     } 
+//     callback(a+b)
 // }
 
-// function alrt(){
-//     return 'alert'
-// }
-
-// function consoleLog(){
-//     return 'console.log'
-// }
-
-// add(3,5,consoleLog)
-// add(3,5,alrt)
+// add(3,5,console.log)
+// add(3,5,alert)
 
 
 
