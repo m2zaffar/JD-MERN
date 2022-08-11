@@ -1,0 +1,139 @@
+---------------------------------------------------task23-----------------------------------------------------------
+
+
+
+
+23.1. deepClone(obj1, obj2) -> obj1deki butun propertyleri obj2ye menimsetsin
+23.2.  deleteProperty(propertyName, obj) ->  verdiyimiz obyektden adini verdiyimiz property-ni silmek
+23.3. obyektin propertylerinin sayini gosteren funksiya yazin
+
+
+
+------------------------------------------JAVASCRIPT-7 OPTINAL TASKS--------------------------------------------------
+-----Exercise (1)-----
+
+Write the following code, one line for each action:
+→ Create an empty object product
+→ Add the property name with the value ’Laptop’
+→ Add the property price with the value 1200
+→ Change the value of the price to 1000
+→ Show the product’s name and price on the screen
+→ Remove the property name from the object
+
+-----Exercise (2)-----
+
+→ We have an object storing salaries of our team:
+
+let salaries = {
+John: 100,
+Ann: 160,
+Peter: 130
+}
+
+→ Write the code to sum all salaries and store in the variable sum
+  → Should be 390 in the example above
+→ If salaries is empty, then the result must be 0
+
+-----Exercise (3)-----
+
+→ Create an object calculator with three methods:
+ → read() prompts for two values and saves them as object properties
+ → sum() returns the sum of saved values
+ → mul() multiplies saved values and returns the result
+
+let calculator = {
+// ... your code ...
+};
+calculator.read();
+alert(calculator.sum());
+alert(calculator.mul());
+
+-----Exercise (4)-----
+
+→ Create a constructor function Calculator that creates objects with 3 methods:
+ → read() asks for two values using prompt and remembers them in object properties
+ → sum() returns the sum of these properties
+ → mul() returns the multiplication product of these properties
+→ For instance:
+
+let calculator = new Calculator();
+calculator.read();
+alert("Sum = " + calculator.sum());
+alert("Mul = " + calculator.mul());
+
+-----Exercise (5)-----
+
+→ Create a constructor function Accumulator(startingValue)
+→ Object that it creates should:
+  → Store the “current value” in the property value. The starting value is set to the argument of
+    the constructor startingValue.
+  → The read() method should use prompt to read a new number and add it to value.
+    → In other words, the value property is the sum of all user-entered values with the initial value
+      startingValue.
+
+→ Here’s the demo of the code:
+let accumulator = new Accumulator(1); // initial value 1
+accumulator.read(); // adds the user-entered value
+accumulator.read(); // adds the user-entered value
+alert(accumulator.value); // shows the sum of these values
+
+
+
+-----Exercise (6)------
+
+→ Create a constructor function Calculator that creates “extendable” calculator objects
+→ First, implement the method calculate(str) that takes a string like "1 + 2" in the format
+“NUMBER operator NUMBER” (space-delimited) and returns the result. Should
+understand plus + and minus -.
+
+let calc = new Calculator();
+alert(calc.calculate("3 + 7")); // 10
+
+→ Then add the method addOperator(name, func) that teaches the calculator a new operation.
+It takes the operator name and the two-argument function func(a,b) that implements it. Usage
+example:
+
+let powerCalc = new Calculator();
+powerCalc.addMethod("*", (a, b) => a * b);
+powerCalc.addMethod("/", (a, b) => a / b);
+powerCalc.addMethod("**", (a, b) => a ** b);
+let result = powerCalc.calculate("2 ** 3");
+alert(result); // 8
+
+-----Exercise (7)-----
+
+→ Here the function makeUser() returns an object
+→ What is the result of accessing its ref? Why?
+
+function makeUser() {
+return {
+name: "John",
+ref: this};
+};
+let user = makeUser();
+alert(user.ref.name); // What's the result?
+
+-----Exercise (8)-----
+
+→ There’s a ladder object that allows to go up and down:
+
+let ladder = {
+step: 0,
+up() {
+this.step++;},
+down() {
+this.step--;},
+showStep: function () { // shows the current step
+alert(this.step);}
+};
+
+→ Now, if we need to make several calls in sequence, can do it like this:
+
+ladder.up();
+ladder.up();
+ladder.down();
+ladder.showStep(); // 1
+
+→ Modify the code of up and down to make the calls chainable, like this:
+
+ladder.up().up().down().showStep(); // 1
