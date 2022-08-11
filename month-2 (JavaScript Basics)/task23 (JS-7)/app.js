@@ -87,21 +87,19 @@
 // let calculator = {
 //     read: function(){
 //         let value1=prompt('')
-//         return value1
+//         let value2=prompt('')
+//         calculator.value1=value1
+//         calculator.value2=value2
+        
         
 //     },
-//     read2: function(){
-//         let value2 = prompt('')
-//         return value2
+//     sum: function(){
+//         return Number(calculator.value1)+Number(calculator.value2)
 //     },
-//     sum: function(a,b){
-//         return a+b
-//     },
-//     mull: function(a,b){
-//         return a*b
+//     mull: function(){
+//         return calculator.value1*calculator.value2
 //     }
 // }
-// // calculator.read()
-// // calculator.read2()
-// alert(calculator.sum(calculator.read(),calculator.read2()));
-// alert(calculator.mull(calculator.read(),calculator.read2()));
+// calculator.read()
+// alert(calculator.sum());
+// alert(calculator.mull());
