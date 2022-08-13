@@ -1,0 +1,112 @@
+
+
+--------------------------------------------------task24---------------------------------------------------------------------
+
+ simple authorization
+
+picture.file ==> form-u yaradin(input ve button). 2 funksionalligimiz olsun:
+1. Daxil ol funksionalligi. 
+2. Qeydiyyat funksionalligi. 
+istifadeci oz email ve sifresini yazacaq. Eger daxil ol-a kliklese, 
+email ve sifreni yoxla eger proqramda yazdigimiz user obyektindekilere beraberdirse o zaman Hi,
+istifadeciAdi and basqa ne text isteseniz ona gosterin.  Bu form istisna olmaqla. Bu formu gormemelidir. 
+Eger istifadeci qeydiyyat-a kliklese, bu email ve sifreye gore createUser funksiyasi ile yeni user obyekti yaradin. 
+Istifdeci qeydiyyat edenden sonra daxil olmagi bacarmalidir.
+
+İnputun əvəzinə prompt istifadə edin
+
+
+
+------------------------------------------JAVASCRIPT-7-SECOND-PART OPTINAL TASKS--------------------------------------------------
+
+
+
+-----Exercise (4)-----
+
+→ Create a constructor function Calculator that creates objects with 3 methods:
+ → read() asks for two values using prompt and remembers them in object properties
+ → sum() returns the sum of these properties
+ → mul() returns the multiplication product of these properties
+→ For instance:
+
+let calculator = new Calculator();
+calculator.read();
+alert("Sum = " + calculator.sum());
+alert("Mul = " + calculator.mul());
+
+-----Exercise (5)-----
+
+→ Create a constructor function Accumulator(startingValue)
+→ Object that it creates should:
+  → Store the “current value” in the property value. The starting value is set to the argument of
+    the constructor startingValue.
+  → The read() method should use prompt to read a new number and add it to value.
+    → In other words, the value property is the sum of all user-entered values with the initial value
+      startingValue.
+
+→ Here’s the demo of the code:
+let accumulator = new Accumulator(1); // initial value 1
+accumulator.read(); // adds the user-entered value
+accumulator.read(); // adds the user-entered value
+alert(accumulator.value); // shows the sum of these values
+
+
+
+-----Exercise (6)------
+
+→ Create a constructor function Calculator that creates “extendable” calculator objects
+→ First, implement the method calculate(str) that takes a string like "1 + 2" in the format
+“NUMBER operator NUMBER” (space-delimited) and returns the result. Should
+understand plus + and minus -.
+
+let calc = new Calculator();
+alert(calc.calculate("3 + 7")); // 10
+
+→ Then add the method addOperator(name, func) that teaches the calculator a new operation.
+It takes the operator name and the two-argument function func(a,b) that implements it. Usage
+example:
+
+let powerCalc = new Calculator();
+powerCalc.addMethod("*", (a, b) => a * b);
+powerCalc.addMethod("/", (a, b) => a / b);
+powerCalc.addMethod("**", (a, b) => a ** b);
+let result = powerCalc.calculate("2 ** 3");
+alert(result); // 8
+
+-----Exercise (7)-----
+
+→ Here the function makeUser() returns an object
+→ What is the result of accessing its ref? Why?
+
+function makeUser() {
+return {
+name: "John",
+ref: this};
+};
+let user = makeUser();
+alert(user.ref.name); // What's the result?
+
+-----Exercise (8)-----
+
+→ There’s a ladder object that allows to go up and down:
+
+let ladder = {
+step: 0,
+up() {
+this.step++;},
+down() {
+this.step--;},
+showStep: function () { // shows the current step
+alert(this.step);}
+};
+
+→ Now, if we need to make several calls in sequence, can do it like this:
+
+ladder.up();
+ladder.up();
+ladder.down();
+ladder.showStep(); // 1
+
+→ Modify the code of up and down to make the calls chainable, like this:
+
+ladder.up().up().down().showStep(); // 1
