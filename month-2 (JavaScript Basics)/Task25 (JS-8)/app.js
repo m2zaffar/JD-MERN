@@ -128,7 +128,7 @@
 // let maximumAge = 77
 // alert(`After ${77-userAge} years you will die!`)
 
-// TASK 25.4.6 --- ? unsolved
+// TASK 25.4.6 --- ? unsolved (this is long story)
 
 // let userAge = prompt('Enter your birthday:')
 // let now = new Date()
