@@ -1,0 +1,5 @@
+#task
+
+
+4 ədəd button olsun. Hansına clickləsəm bodynin rəngi o rəngdə olsun.
+elementi getElementById ile alin. Ve onun onclick propertysinden istifade edin. onClick property-si bir funksiya alir
