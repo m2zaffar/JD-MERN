@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color: aliceblue;
+
+    
+}
+
+.content{
+    text-align: center;
+    margin: 5px;
+}
+
+.content:hover{
+    cursor: grab;
+    text-shadow: 2px 2px 4px #ad0a0a
+      
+}
+
+
